@@ -1,6 +1,6 @@
 FROM openjdk:8
 EXPOSE 8292
-COPY *.jar  helloworld.jar
+COPY --from=build target/helloworld.jar helloworld.jar
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/helloworld.jar"]
 # FROM openjdk:8-jdk-alpine
 # EXPOSE 8080
