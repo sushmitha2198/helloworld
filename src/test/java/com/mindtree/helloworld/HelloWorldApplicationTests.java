@@ -1,13 +1,13 @@
-package com.mindtree.studentname;
+package com.mindtree.helloworld;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class StudentNameApplicationTests {
+public class HelloWorldApplicationTests {
 
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
 	}
 
 }
